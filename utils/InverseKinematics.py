@@ -494,4 +494,3 @@ class ICP:
                 curr = Animation.skin(self.animation, self.rest, self.vweights, self.mesh)
                 error = np.mean(np.sqrt(np.sum((curr - self.goal)**2.0, axis=-1)))
                 print('[ICP] Iteration %i | Error: %f' % (i+1, error))
-                
